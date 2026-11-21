@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect | Campus Clubs & Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">CC</span> CampusConnect</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a><a href="#clubs">Clubs</a><a href="#events">Events</a><a href="#registrations">My Registrations</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR CAMPUS • YOUR COMMUNITY</p>
+        <h1>Discover your people.<br><span>Make campus memories.</span></h1>
+        <p>Explore clubs, find exciting activities, and join events happening around your campus—all in one place.</p>
+        <a class="primary-btn" href="#events">Explore Events ↓</a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit1"></div><div class="orbit orbit2"></div><div class="art-card">🎓<strong>Campus life</strong><small>Connect • Explore • Grow</small></div><span class="float f1">🎨</span><span class="float f2">💻</span><span class="float f3">🏆</span></div>
+    </section>
+
+    <section class="section" id="clubs">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR INTEREST</p><h2>Explore campus clubs</h2></div><p>There is a place for every passion.</p></div>
+      <div class="club-grid">
+        <article class="club-card"><div class="club-icon blue">💻</div><h3>Coding Club</h3><p>Build projects, solve challenges, and learn programming together.</p><span class="tag">Technology</span></article>
+        <article class="club-card"><div class="club-icon pink">🎭</div><h3>Cultural Club</h3><p>Celebrate creativity through music, dance, theatre, and festivals.</p><span class="tag">Arts & Culture</span></article>
+        <article class="club-card"><div class="club-icon yellow">📷</div><h3>Photography Club</h3><p>Capture campus moments and improve your photography skills.</p><span class="tag">Creative</span></article>
+        <article class="club-card"><div class="club-icon green">⚽</div><h3>Sports Club</h3><p>Stay active, practice teamwork, and participate in tournaments.</p><span class="tag">Sports</span></article>
+        <article class="club-card"><div class="club-icon purple">🤖</div><h3>Robotics Club</h3><p>Explore robotics, automation, and hands-on innovation.</p><span class="tag">Innovation</span></article>
+        <article class="club-card"><div class="club-icon teal">🌱</div><h3>Eco Club</h3><p>Take part in sustainability activities and green campus initiatives.</p><span class="tag">Environment</span></article>
+      </div>
+    </section>
+
+    <section class="section events-section" id="events">
+      <div class="section-heading"><div><p class="eyebrow">WHAT'S HAPPENING</p><h2>Upcoming events</h2></div><p>Choose an event and register to join.</p></div>
+      <div class="filters"><input id="searchInput" type="search" placeholder="Search events..." aria-label="Search events"><select id="categoryFilter" aria-label="Filter category"><option value="all">All categories</option><option value="Technology">Technology</option><option value="Arts & Culture">Arts & Culture</option><option value="Sports">Sports</option><option value="Creative">Creative</option><option value="Environment">Environment</option></select></div>
+      <div class="event-grid" id="eventGrid"></div>
+    </section>
+
+    <section class="section registrations" id="registrations">
+      <div class="section-heading"><div><p class="eyebrow">YOUR EVENT LIST</p><h2>My registrations</h2></div><p>Events you have joined appear here.</p></div>
+      <div id="registrationList" class="registration-list"><p class="empty-state">You haven't registered for any events yet. Explore events above!</p></div>
+    </section>
+  </main>
+  <footer><div class="brand"><span class="brand-icon">CC</span> CampusConnect</div><p>Connecting students with campus communities and experiences.</p><small>Web Essentials Mini Project • HTML, CSS & JavaScript</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
